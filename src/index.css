@@ -1,13 +1,97 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+main {
+  padding: 36px;
+}
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.header {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  color: white;
+  background: linear-gradient(90deg, #0b3770 1.18%, #333470 100%);
+  padding: 20px;
+}
+.headerImage {
+  height: 100%;
+  margin-right: 6px;
+}
+
+.headerTitle {
+  margin-right: auto;
+  font-size: 1.25rem;
+}
+.headerProject {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.form {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+
+  margin-bottom: 17px;
+}
+.formInputs {
+  border-radius: 5px;
+  border: 1px solid #d5d5d8;
+  text-indent: 5px;
+}
+
+.formButton {
+  grid-column: 1 / -1;
+  border-radius: 5px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #0b3770 1.18%, #333470 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.memeBox {
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+.memeText {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
+.meme {
+  position: relative;
+  width: fit-content;
 }
